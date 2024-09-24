@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajude a Escola</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        header { background-image: url(dinheiro.png) ; width: auto%; height: ;
+        background-repeat: no-repeat;;
+    background-size: cover;}
+        .logo { border-radius: 50%; width: 100px; height: 100px; }
+        .descricao, .importancia { margin: 20px 0; }
+        .container { display: flex; justify-content: center; align-items: center; }
+        .info { margin-right: 20px; }
+        .botoes { display: flex; flex-wrap: wrap; justify-content: center; margin: 20px; }
+        button { margin: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="LogoEscola.png" alt="Logo" class="logo">
+    <h1>Título do Site</h1>
+</header>
+
+<p class="descricao">Descrição sobre a escola e a APM.</p>
+
+<div class="container">
+    <div class="info">
+        <img src="WhatsApp Image 2024-09-20 at 16.26.17.jpeg" alt="QR Code" width="100">
+        <p>CNPJ: 51.503.662/0001-15</p>
+        <button onclick="copyCNPJ()">Copiar CNPJ</button>
+    </div>
+</div>
+
+<p class="importancia">A importância de ajudar a escola através da APM.</p>
+
+<div class="botoes">
+    <button onclick="location.href='galeria1.html'">Galeria 1</button>
+    <button onclick="location.href='galeria2.html'">Galeria 2</button>
+    <button onclick="location.href='galeria3.html'">Galeria 3</button>
+    <button onclick="location.href='galeria4.html'">Galeria 4</button>
+    <button onclick="location.href='galeria5.html'">Galeria 5</button>
+    <button onclick="location.href='galeria6.html'">Galeria 6</button>
+</div>
+
+<script>
+    function copyCNPJ() {
+        navigator.clipboard.writeText("12.345.678/0001-99");
+        alert("CNPJ copiado!");
+    }
+</script>
+
+</body>
+</html>
